@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 - Mostrar e ocultar senha</title>
+</head>
+<body>
+
+    <input type="password" id="senha">
+    
+    <button onclick="mostrarOcultar()">Mostrar/ocultar senha</button>
+
+    <script>
+        const senha = document.getElementById('senha')
+
+        function mostrarOcultar() {
+            senha.type === 'password' ? 
+            senha.setAttribute('type','text') 
+            : 
+            senha.setAttribute('type','password') 
+        }
+    </script>
+
+</body>
+</html>
+

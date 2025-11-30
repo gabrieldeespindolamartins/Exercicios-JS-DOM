@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 - Alterar regra css de um elemento</title>
+</head>
+<body>
+
+    <style>
+        #square {
+            background-color: brown;
+        }
+    </style>
+
+    <div id="square">
+        Square
+    </div>
+
+    <button onclick="alterColor()">
+        Alterar Cor
+    </button>
+
+    <script>
+        function alterColor() {
+            const el =  document.getElementById('square')
+            el.style.backgroundColor = 'blue';
+        }
+    </script>
+
+</body>
+</html>
+
