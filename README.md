@@ -14,6 +14,7 @@ Servir como registro do meu progresso e como ambiente de prática, permitindo qu
 4 - Mostrar e ocultar senha ✅
 5 - Contador simples ✅
 5 - Aumentar tamanho de elemento ao passar o mouse (hover)
+6 - Trocar imagem ao clicar
 6 - Mudar cor de um elemento ao passar o mouse (hover) 
 7 - Exibir elemento ao passar o mouse (ex.: tooltip simples)
 8 - Exibir lista
