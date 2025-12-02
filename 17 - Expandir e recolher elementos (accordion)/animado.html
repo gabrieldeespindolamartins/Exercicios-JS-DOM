@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expandir com animação suave</title>
+  <style>
+    #secao {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <p>Conteúdo visível</p>
+  
+  <div id="secao">
+    <p>Conteúdo expandido demasiadamente divertido e estrategicamente maior do que o normal</p>
+  </div>
+
+  <button onclick="expandir()">Expandir/Recolher</button>
+
+  <script>
+    function expandir() {
+      const secao = document.getElementById("secao");
+
+      if (secao.style.maxHeight && secao.style.maxHeight !== "0px") {
+        // recolher
+        secao.style.maxHeight = "0px";
+      } else {
+        // expandir até a altura real do conteúdo
+        secao.style.maxHeight = secao.scrollHeight + "px";
+      }
+    }
+  </script>
+</body>
+</html>
