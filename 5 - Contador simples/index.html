@@ -6,6 +6,19 @@
     <title>5 - Contador simples </title>
 </head>
 <body>
-    
+    <p id="p"> Contador:</p>
+    <button onclick="aumentar()">
+        Aumentar 
+    </button>
+
+    <script>
+            let contador = 0;
+        function aumentar() {
+            contador++;
+            document.getElementById("p").innerHTML = "Contador: " + contador;
+
+        }  
+        
+    </script>
 </body>
 </html>

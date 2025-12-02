@@ -12,7 +12,7 @@ Servir como registro do meu progresso e como ambiente de prática, permitindo qu
 2 - Alterar texto ao clicar em um botão e voltar ao clicar novamente ✅
 3 - Alterar regra css de um elemento ✅
 4 - Mostrar e ocultar senha ✅
-5 - Contador simples 
+5 - Contador simples ✅
 5 - Aumentar tamanho de elemento ao passar o mouse (hover)
 6 - Mudar cor de um elemento ao passar o mouse (hover) 
 7 - Exibir elemento ao passar o mouse (ex.: tooltip simples)
