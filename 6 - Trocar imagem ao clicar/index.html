@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 - Trocar imagem ao clicar</title>
+</head>
+<body>
+    <div>
+        <img id="image" src="verde.png">
+
+        <button onclick="Change()">
+            Mudar Cor
+        </button>
+
+        <script>
+            const image = document.getElementById('image')
+            function Change(){
+                if(image.getAttribute('src') === 'verde.png'){
+                    image.src = 'vermelho.png'
+                } else {
+                    image.src = 'verde.png'
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
