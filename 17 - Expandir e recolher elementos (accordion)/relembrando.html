@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17 - Expandir e recolher elementos</title>
+</head>
+<body>
+
+    <style>
+        #secao {
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            max-height: 0;
+        }
+    </style>
+
+    
+    <h1>TEXTAO</h1>
+    
+    <div id="secao">
+        <p>textinho</p>
+    </div>
+
+    <button onClick="show()">
+        Aparecer textinho
+    </button>
+
+    <script>
+    
+    function show() {
+        let text = document.getElementById('secao')
+        if (text.style.maxHeight && text.style.maxHeight !== '0px'){
+            text.style.maxHeight = '0px'
+        } else {
+            text.style.maxHeight = text.scrollHeight + 'px'
+        }
+    }
+
+    </script>
+</body>
+</html>
